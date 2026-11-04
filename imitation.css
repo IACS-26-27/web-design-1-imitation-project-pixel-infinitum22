@@ -1,1 +1,109 @@
 /* CSS for your imitation here */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.board {
+  /* help from hinkle */
+  display: grid;
+  grid-template-columns: 150px 500px 150px;
+  grid-template-rows: 150px 500px 150px; /* these will size to content */
+    width: 800px;
+    height: 800px;
+    border-color: black;
+    border-width: 10px;
+    border-style: solid;
+    background-color: rgb(206, 209, 194);
+}
+
+div.topleft {
+  width: 130px;
+  height: 130px;
+    border-color: black;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-right-width: 1px;
+    border-right-style: solid;
+}
+
+div.top {
+  width: 500px;
+  height: 150px;
+    border-color: black;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+  display: flex;
+  align-items: flex-end;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+div.space-top {
+  width: 75px;
+  height: 75px;
+    border-color: black;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-right-width: 1px;
+    border-right-style: solid;
+}
+
+div.topright {
+  width: 150px;
+  height: 150px;
+    border-color: black;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-left-width: 1px;
+    border-left-style: solid;
+}
+
+div.left {
+    width: 150px;
+    height: 500px;
+    border-color: black;
+    border-right-width: 1px;
+    border-top-style: solid;
+    display: flex;
+    width: 500px;
+    transform: rotate(90deg)translatey(-150px);
+    transform-origin: top left;
+}
+
+div.right {
+  width: 150px;
+  height: 500px;
+    border-color: black;
+    border-left-width: 1px;
+    border-left-style: solid;
+}
+
+div.bottomleft {
+  width: 150px;
+  height: 150px;
+    border-color: black;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-right-width: 1px;
+    border-right-style: solid;
+}
+
+div.bottom {
+  width: 500px;
+  height: 150px;
+    border-color: black;
+    border-top-width: 1px;
+    border-top-style: solid;
+}
+
+div.bottomright {
+  width: 150px;
+  height: 150px;
+    border-color: black;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-left-width: 1px;
+    border-left-style: solid;
+}
