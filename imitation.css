@@ -8,102 +8,147 @@ main {
 div.board {
   /* help from hinkle */
   display: grid;
-  grid-template-columns: 150px 500px 150px;
-  grid-template-rows: 150px 500px 150px; /* these will size to content */
-    width: 800px;
-    height: 800px;
-    border-color: black;
-    border-width: 10px;
-    border-style: solid;
-    background-color: rgb(206, 209, 194);
+  grid-template-columns: 111px 598px 111px;
+  grid-template-rows: 111px 598px 111px;
+  /* these will size to content */
+  width: 820px;
+  height: 820px;
+  border-color: black;
+  border-width: 10px;
+  border-style: solid;
+  background-color: rgb(206, 209, 194);
 }
 
 div.topleft {
-  width: 130px;
-  height: 130px;
-    border-color: black;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-right-width: 1px;
-    border-right-style: solid;
+  width: 111px;
+  height: 111px;
+  border-color: black;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-right-width: 1px;
+  border-right-style: solid;
 }
 
 div.top {
-  width: 500px;
-  height: 150px;
-    border-color: black;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
+  width: 598px;
+  height: 111px;
+  border-color: black;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
   display: flex;
   align-items: flex-end;
-    flex-wrap: nowrap;
-    flex-direction: row;
+  flex-wrap: nowrap;
+  flex-direction: row;
 }
 
 div.space-top {
-  width: 75px;
-  height: 75px;
+  width: 74px;
+    height: 111px;
     border-color: black;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
     border-right-width: 1px;
     border-right-style: solid;
+  display: flex;
+  justify-content: start;
+  transform-origin: top left;
+  transform: rotate(180deg) translatey(-111px) translatex(-132px);
+
 }
 
 div.topright {
-  width: 150px;
-  height: 150px;
-    border-color: black;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-left-width: 1px;
-    border-left-style: solid;
+  width: 111px;
+  height: 111px;
+  border-color: black;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
 }
 
 div.left {
-    width: 150px;
-    height: 500px;
-    border-color: black;
-    border-right-width: 1px;
-    border-top-style: solid;
-    display: flex;
-    width: 500px;
-    transform: rotate(90deg)translatey(-150px);
-    transform-origin: top left;
+  width: 111px;
+  height: 111px;
+  border-color: black;
+  display: flex;
+  width: 598px;
+  transform: rotate(90deg)translatey(-130px);
+  transform-origin: top left;
+  
+}
+
+div.space-left {
+  width: 111px;
+  height: 111px;
+  border-color: black;
+  border-left-width: 1px;
+  border-left-style: solid;
+  display: flex;
+    justify-content: start;
+  width: 111px;
+  transform: rotate(90deg)translatey(-111px)translatex(18px);
+  transform-origin: top left;
+}
+
+div.center {
+  position:relative;
 }
 
 div.right {
-  width: 150px;
-  height: 500px;
-    border-color: black;
-    border-left-width: 1px;
-    border-left-style: solid;
+  width: 111px;
+  height: 598px;
+  border-color: black;
+  border-left-width: 1px;
+  border-left-style: solid;
+  justify-content: start;
+    display: flex;
+}
+
+div.space-right {
+  width: 111px;
+  height: 111px;
+  border-color: black;
+  border-left-width: 1px;
+  border-left-style: solid;
+  display: flex;
+    justify-content: start;
+    width: 111px;
+    transform: rotate(-90deg)translatey(29px);
+    transform-origin: top left;
 }
 
 div.bottomleft {
-  width: 150px;
-  height: 150px;
-    border-color: black;
-    border-top-width: 1px;
-    border-top-style: solid;
-    border-right-width: 1px;
-    border-right-style: solid;
+  width: 111px;
+  height: 111px;
+  border-color: black;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-right-width: 1px;
+  border-right-style: solid;
 }
 
 div.bottom {
-  width: 500px;
-  height: 150px;
-    border-color: black;
-    border-top-width: 1px;
-    border-top-style: solid;
+  width: 598px;
+  height: 111px;
+  border-color: black;
+  border-top-width: 1px;
+  border-top-style: solid;
+  display: flex;
+  justify-content: start;
+}
+
+div.space-bottom {
+  width: 74px;
+  height: 111px;
+  border-color: black;
+  border-right-width: 1px;
+  border-right-style: solid;
+  display: flex;
+  justify-content:start;
 }
 
 div.bottomright {
-  width: 150px;
-  height: 150px;
-    border-color: black;
-    border-top-width: 1px;
-    border-top-style: solid;
-    border-left-width: 1px;
-    border-left-style: solid;
+  width: 111px;
+  height: 111px;
+  border-color: black;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-left-width: 1px;
+  border-left-style: solid;
 }
