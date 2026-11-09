@@ -8,8 +8,8 @@ main {
 div.board {
   /* help from hinkle */
   display: grid;
-  grid-template-columns: 111px 598px 111px;
-  grid-template-rows: 111px 598px 111px;
+  grid-template-columns: 112px 598px 112px;
+  grid-template-rows: 112px 598px 112px;
   /* these will size to content */
   width: 820px;
   height: 820px;
@@ -23,34 +23,30 @@ div.topleft {
   width: 111px;
   height: 111px;
   border-color: black;
-  border-bottom-width: 1px;
+  border-bottom-width: 2px;
   border-bottom-style: solid;
-  border-right-width: 1px;
-  border-right-style: solid;
 }
 
 div.top {
   width: 598px;
   height: 111px;
   border-color: black;
-  border-bottom-width: 1px;
+  border-bottom-width: 2px;
   border-bottom-style: solid;
   display: flex;
-  align-items: flex-end;
   flex-wrap: nowrap;
   flex-direction: row;
 }
 
 div.space-top {
-  width: 74px;
-    height: 111px;
-    border-color: black;
-    border-right-width: 1px;
-    border-right-style: solid;
+  width: 62.5px;
+  height: 111px;
+  border-color: black;
+  border-right-width: 2px;
+  border-right-style: solid;
   display: flex;
-  justify-content: start;
   transform-origin: top left;
-  transform: rotate(180deg) translatey(-111px) translatex(-132px);
+  transform: rotate(180deg) translatey(-111px) translatex(-65px);
 
 }
 
@@ -58,97 +54,101 @@ div.topright {
   width: 111px;
   height: 111px;
   border-color: black;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
+  border-left-width: 2px;
+  border-left-style: solid;
 }
 
 div.left {
-  width: 111px;
   height: 111px;
-  border-color: black;
   display: flex;
   width: 598px;
-  transform: rotate(90deg)translatey(-130px);
+  transform: rotate(90deg)translatey(-111px);
   transform-origin: top left;
-  
 }
 
 div.space-left {
-  width: 111px;
+  width: 74px;
   height: 111px;
   border-color: black;
-  border-left-width: 1px;
-  border-left-style: solid;
+    border-right-width: 2px;
+    border-right-style: solid;
   display: flex;
-    justify-content: start;
+  justify-content: start;
+  flex-direction: column;
   width: 111px;
-  transform: rotate(90deg)translatey(-111px)translatex(18px);
+  transform:translatex(2px);
   transform-origin: top left;
 }
 
 div.center {
-  position:relative;
+  position: relative;
+  border-color: black;
+  border-style: solid;
+  border-width: 2px;
 }
 
 div.right {
   width: 111px;
   height: 598px;
-  border-color: black;
-  border-left-width: 1px;
-  border-left-style: solid;
+  display: flex;
   justify-content: start;
-    display: flex;
+  flex-direction: column;
 }
 
 div.space-right {
   width: 111px;
-  height: 111px;
+  height: 74px;
   border-color: black;
-  border-left-width: 1px;
+  border-left-width: 2px;
   border-left-style: solid;
   display: flex;
-    justify-content: start;
-    width: 111px;
-    transform: rotate(-90deg)translatey(29px);
-    transform-origin: top left;
+  justify-content: start;
+  transform: rotate(-90deg) translatex(-2px);
+  transform-origin: top left;
 }
 
 div.bottomleft {
   width: 111px;
   height: 111px;
   border-color: black;
-  border-top-width: 1px;
+  border-top-width: 2px;
   border-top-style: solid;
-  border-right-width: 1px;
+  border-right-width: 2px;
   border-right-style: solid;
 }
 
 div.bottom {
   width: 598px;
   height: 111px;
-  border-color: black;
-  border-top-width: 1px;
-  border-top-style: solid;
   display: flex;
   justify-content: start;
+    transform: translateY(2px);
 }
 
 div.space-bottom {
   width: 74px;
   height: 111px;
   border-color: black;
-  border-right-width: 1px;
+  border-right-width: 2px;
   border-right-style: solid;
   display: flex;
-  justify-content:start;
+  justify-content: start;
 }
 
 div.bottomright {
   width: 111px;
   height: 111px;
   border-color: black;
-  border-top-width: 1px;
+  border-top-width: 2px;
   border-top-style: solid;
-  border-left-width: 1px;
+}
+
+div.bb-blue {
+  width: 64px;
+  height: 23px;
+  background-color: #C1C7E7;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-color: black;
   border-left-style: solid;
 }
