@@ -8,8 +8,8 @@ main {
 div.board {
   /* help from hinkle */
   display: grid;
-  grid-template-columns: 112px 598px 112px;
-  grid-template-rows: 112px 598px 112px;
+  grid-template-columns: 114px 598px 114px;
+  grid-template-rows: 114px 598px 114px;
   /* these will size to content */
   width: 820px;
   height: 820px;
@@ -29,21 +29,19 @@ div.topleft {
 
 div.top {
   width: 598px;
-  height: 111px;
-  border-color: black;
-  border-bottom-width: 2px;
-  border-bottom-style: solid;
+  height: 114px;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
 }
 
 div.space-top {
-  width: 62.5px;
-  height: 111px;
+  width: 65px;
+  height: 114px;
   border-color: black;
-  border-right-width: 2px;
+  border-width: 2px;
   border-right-style: solid;
+  border-top-style: solid;
   display: flex;
   transform-origin: top left;
   transform: rotate(180deg) translatey(-111px) translatex(-65px);
@@ -51,8 +49,8 @@ div.space-top {
 }
 
 div.topright {
-  width: 111px;
-  height: 111px;
+  width: 114px;
+  height: 114px;
   border-color: black;
   border-left-width: 2px;
   border-left-style: solid;
@@ -70,21 +68,18 @@ div.space-left {
   width: 74px;
   height: 111px;
   border-color: black;
-    border-right-width: 2px;
-    border-right-style: solid;
+  border-right-width: 2px;
+  border-right-style: solid;
   display: flex;
   justify-content: start;
   flex-direction: column;
   width: 111px;
-  transform:translatex(2px);
+  transform: translatex(2px);
   transform-origin: top left;
 }
 
 div.center {
   position: relative;
-  border-color: black;
-  border-style: solid;
-  border-width: 2px;
 }
 
 div.right {
@@ -122,7 +117,7 @@ div.bottom {
   height: 111px;
   display: flex;
   justify-content: start;
-    transform: translateY(2px);
+  transform: translateY(2px);
 }
 
 div.space-bottom {
@@ -131,8 +126,12 @@ div.space-bottom {
   border-color: black;
   border-right-width: 2px;
   border-right-style: solid;
+  border-top-width: 2px;
+  border-top-style: solid;
   display: flex;
   justify-content: start;
+  flex-direction: column;
+  transform: translateY(-4px)
 }
 
 div.bottomright {
@@ -147,8 +146,16 @@ div.bb-blue {
   width: 64px;
   height: 23px;
   background-color: #C1C7E7;
-  border-bottom-width: 2px;
+  border-bottom-width: 1px;
   border-bottom-style: solid;
   border-color: black;
-  border-left-style: solid;
+}
+
+div.maroon {
+  width: 64px;
+  height: 23px;
+  background-color: #7D1402;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-color: black;
 }
