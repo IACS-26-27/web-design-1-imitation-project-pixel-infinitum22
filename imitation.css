@@ -19,6 +19,48 @@ div.board {
   background-color: rgb(206, 209, 194);
 }
 
+h4 {
+  font-size: 6pt;
+  margin-top: 0x;
+  margin-bottom: -13px;
+  display: flex;
+  justify-content: center;
+  font-family: 'Libre Franklin';
+  font-weight: 300;
+  text-align: center;
+}
+
+h5 {
+  font-size: 6pt;
+  margin-top: 0x;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  font-family: 'Libre Franklin';
+  font-weight: 300;
+  text-align: center;
+}
+
+h6 {
+  font-size: 6pt;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  font-family: 'Libre Franklin';
+  font-weight: 300;
+  text-align: center;
+}
+
+p {
+  font-size: 5pt;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  font-family: 'Roboto Condensed';
+  font-weight: 500;
+}
+
 div.topleft {
   width: 111px;
   height: 111px;
@@ -129,7 +171,7 @@ div.space-bottom {
   border-top-width: 2px;
   border-top-style: solid;
   display: flex;
-  justify-content: start;
+  justify-content: baseline;
   flex-direction: column;
   transform: translateY(-4px)
 }
