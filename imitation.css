@@ -193,6 +193,11 @@ div.bb-blue {
   border-color: black;
 }
 
+img.question1 {
+  transform: translatey (-50px);
+  border-top-width: 0px;
+}
+
 div.maroon {
   width: 64px;
   height: 23px;
