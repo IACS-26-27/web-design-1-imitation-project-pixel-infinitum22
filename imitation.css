@@ -19,9 +19,19 @@ div.board {
   background-color: rgb(206, 209, 194);
 }
 
+h2 {
+  font-size: 8pt;
+  margin-top: 6px;
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: center;
+  font-family: 'Libre Franklin';
+  font-weight: 300;
+  text-align: center;
+}
+
 h4 {
   font-size: 6pt;
-  margin-top: 0x;
   margin-bottom: -13px;
   display: flex;
   justify-content: center;
@@ -32,8 +42,6 @@ h4 {
 
 h5 {
   font-size: 6pt;
-  margin-top: 0x;
-  margin-bottom: 20px;
   display: flex;
   justify-content: center;
   font-family: 'Libre Franklin';
@@ -60,6 +68,16 @@ p {
   font-family: 'Roboto Condensed';
   font-weight: 500;
 }
+
+h3 {
+  font-size: 5pt;
+  margin-top: 2px;
+  display: flex;
+  justify-content: center;
+  font-family: 'Roboto Condensed';
+  font-weight: 500;
+}
+
 
 div.topleft {
   width: 111px;
@@ -136,17 +154,19 @@ div.space-right {
   width: 111px;
   height: 74px;
   border-color: black;
-  border-left-width: 2px;
-  border-left-style: solid;
+  border-right-width: 2px;
+  border-right-style: solid;
+  border-top-width: 2px;
+  border-top-style: solid;
   display: flex;
-  justify-content: start;
-  transform: rotate(-90deg) translatex(-2px);
-  transform-origin: top left;
+  justify-content: baseline;
+  flex-direction: row;
+  transform: translateY(-4px) rotate(180);
 }
 
 div.bottomleft {
   width: 111px;
-  height: 111px;
+  height: 112px;
   border-color: black;
   border-top-width: 2px;
   border-top-style: solid;
@@ -173,7 +193,7 @@ div.space-bottom {
   display: flex;
   justify-content: baseline;
   flex-direction: column;
-  transform: translateY(-4px)
+  transform: translateY(-4px);
 }
 
 div.bottomright {
@@ -194,7 +214,7 @@ div.bb-blue {
 }
 
 img.question1 {
-  transform: translateY(-11px) translateX(12px);
+  transform: translateY(8px) translateX(12px);
   border-top-width: 0px;
   width: 40px;
   height: 70px;
@@ -205,6 +225,19 @@ img.train {
   border-top-width: 0px;
   width: 61px;
   border-bottom-width: 0px;
+}
+
+img.diamond {
+  width: 12px;
+  margin-top: 20px;
+  margin-left: 25px;
+  margin-bottom: 20px;
+}
+
+img.commchest {
+  width: 55px;
+  margin-top: 23px;
+  margin-left: 4px;
 }
 
 div.maroon {
