@@ -11,8 +11,8 @@ div.board {
   grid-template-columns: 114px 598px 114px;
   grid-template-rows: 114px 598px 114px;
   /* these will size to content */
-  width: 820px;
-  height: 820px;
+  width: 830px;
+  height: 830px;
   border-color: black;
   border-width: 10px;
   border-style: solid;
@@ -89,10 +89,10 @@ div.topleft {
 
 div.top {
   width: 598px;
-  height: 114px;
+  height: 111px;
   display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
+  justify-content: start;
+  transform: translateY(-3px) rotate(180deg);
 }
 
 div.space-top {
@@ -103,9 +103,6 @@ div.space-top {
   border-right-style: solid;
   border-top-style: solid;
   display: flex;
-  transform-origin: top left;
-  transform: rotate(180deg) translatey(-111px) translatex(-65px);
-
 }
 
 div.topright {
@@ -120,7 +117,7 @@ div.left {
   height: 111px;
   display: flex;
   width: 598px;
-  transform: rotate(90deg)translatey(-111px);
+  transform: rotate(90deg)translatey(-112px);
   transform-origin: top left;
 }
 
@@ -143,11 +140,11 @@ div.center {
 }
 
 div.right {
-  width: 111px;
-  height: 598px;
+  width: 598px;
+  height: 111px;
   display: flex;
   justify-content: start;
-  flex-direction: column;
+  transform: translatex(-239px) translateY(217%) rotate(-90deg);
 }
 
 div.space-right {
@@ -168,8 +165,6 @@ div.bottomleft {
   width: 111px;
   height: 112px;
   border-color: black;
-  border-top-width: 2px;
-  border-top-style: solid;
   border-right-width: 2px;
   border-right-style: solid;
 }
@@ -179,7 +174,7 @@ div.bottom {
   height: 111px;
   display: flex;
   justify-content: start;
-  transform: translateY(2px);
+  transform: translateY(9px);
 }
 
 div.space-bottom {
