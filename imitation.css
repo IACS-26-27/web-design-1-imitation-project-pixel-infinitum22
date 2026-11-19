@@ -1,1 +1,250 @@
 /* CSS for your imitation here */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.board {
+  /* help from hinkle */
+  display: grid;
+  grid-template-columns: 114px 598px 114px;
+  grid-template-rows: 114px 598px 114px;
+  /* these will size to content */
+  width: 820px;
+  height: 820px;
+  border-color: black;
+  border-width: 10px;
+  border-style: solid;
+  background-color: rgb(206, 209, 194);
+}
+
+h2 {
+  font-size: 8pt;
+  margin-top: 6px;
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: center;
+  font-family: 'Libre Franklin';
+  font-weight: 300;
+  text-align: center;
+}
+
+h4 {
+  font-size: 6pt;
+  margin-bottom: -13px;
+  display: flex;
+  justify-content: center;
+  font-family: 'Libre Franklin';
+  font-weight: 300;
+  text-align: center;
+}
+
+h5 {
+  font-size: 6pt;
+  display: flex;
+  justify-content: center;
+  font-family: 'Libre Franklin';
+  font-weight: 300;
+  text-align: center;
+}
+
+h6 {
+  font-size: 6pt;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: center;
+  font-family: 'Libre Franklin';
+  font-weight: 300;
+  text-align: center;
+}
+
+p {
+  font-size: 5pt;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  font-family: 'Roboto Condensed';
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 5pt;
+  margin-top: 2px;
+  display: flex;
+  justify-content: center;
+  font-family: 'Roboto Condensed';
+  font-weight: 500;
+}
+
+
+div.topleft {
+  width: 111px;
+  height: 111px;
+  border-color: black;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+}
+
+div.top {
+  width: 598px;
+  height: 114px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+div.space-top {
+  width: 65px;
+  height: 114px;
+  border-color: black;
+  border-width: 2px;
+  border-right-style: solid;
+  border-top-style: solid;
+  display: flex;
+  transform-origin: top left;
+  transform: rotate(180deg) translatey(-111px) translatex(-65px);
+
+}
+
+div.topright {
+  width: 114px;
+  height: 114px;
+  border-color: black;
+  border-left-width: 2px;
+  border-left-style: solid;
+}
+
+div.left {
+  height: 111px;
+  display: flex;
+  width: 598px;
+  transform: rotate(90deg)translatey(-111px);
+  transform-origin: top left;
+}
+
+div.space-left {
+  width: 74px;
+  height: 111px;
+  border-color: black;
+  border-right-width: 2px;
+  border-right-style: solid;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  width: 111px;
+  transform: translatex(2px);
+  transform-origin: top left;
+}
+
+div.center {
+  position: relative;
+}
+
+div.right {
+  width: 111px;
+  height: 598px;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+}
+
+div.space-right {
+  width: 111px;
+  height: 74px;
+  border-color: black;
+  border-right-width: 2px;
+  border-right-style: solid;
+  border-top-width: 2px;
+  border-top-style: solid;
+  display: flex;
+  justify-content: baseline;
+  flex-direction: row;
+  transform: translateY(-4px) rotate(180);
+}
+
+div.bottomleft {
+  width: 111px;
+  height: 112px;
+  border-color: black;
+  border-top-width: 2px;
+  border-top-style: solid;
+  border-right-width: 2px;
+  border-right-style: solid;
+}
+
+div.bottom {
+  width: 598px;
+  height: 111px;
+  display: flex;
+  justify-content: start;
+  transform: translateY(2px);
+}
+
+div.space-bottom {
+  width: 74px;
+  height: 111px;
+  border-color: black;
+  border-right-width: 2px;
+  border-right-style: solid;
+  border-top-width: 2px;
+  border-top-style: solid;
+  display: flex;
+  justify-content: baseline;
+  flex-direction: column;
+  transform: translateY(-4px);
+}
+
+div.bottomright {
+  width: 111px;
+  height: 111px;
+  border-color: black;
+  border-top-width: 2px;
+  border-top-style: solid;
+}
+
+div.bb-blue {
+  width: 64px;
+  height: 23px;
+  background-color: #C1C7E7;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-color: black;
+}
+
+img.question1 {
+  transform: translateY(8px) translateX(12px);
+  border-top-width: 0px;
+  width: 40px;
+  height: 70px;
+}
+
+img.train {
+  /* transform: translateY(-20px) translateX(1px); */
+  border-top-width: 0px;
+  width: 61px;
+  border-bottom-width: 0px;
+}
+
+img.diamond {
+  width: 12px;
+  margin-top: 20px;
+  margin-left: 25px;
+  margin-bottom: 20px;
+}
+
+img.commchest {
+  width: 55px;
+  margin-top: 23px;
+  margin-left: 4px;
+}
+
+div.maroon {
+  width: 64px;
+  height: 23px;
+  background-color: #7D1402;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-color: black;
+}
